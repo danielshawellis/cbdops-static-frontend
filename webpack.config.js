@@ -64,6 +64,10 @@ module.exports = {
   },
   devServer: {
     contentBase: path.resolve(__dirname, 'dist'),
-    port: 3000
+    port: 3000,
+    overlay: {
+      warnings: true,
+      errors: true
+    }
   }
 };

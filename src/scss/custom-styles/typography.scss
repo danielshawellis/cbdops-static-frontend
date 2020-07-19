@@ -1,13 +1,3 @@
-// IMPORT BOOTSTRAP THEME
-@import "../bootstrap-theme.scss";
-
-// SET TYPOGRAPHY DEFAULTS
-h1, h2, h3, h4, h5, h6 {
-    font-family: $headings-font-family;
-}
-
-// *Base font family set in bootstrap-theme.scss -> $font-family-base
-
 // LOAD FONT FACES
 @font-face {
     font-family: 'Squares Bold';
