@@ -66,23 +66,23 @@ module.exports = {
       template: 'src/html/index.html'
     }),
     new HtmlWebpackPlugin({
-      filename: 'about-us.html',
+      filename: 'about-us',
       template: 'src/html/about-us.html'
     }),
     new HtmlWebpackPlugin({
-      filename: 'faq.html',
+      filename: 'faq',
       template: 'src/html/faq.html'
     }),
     new HtmlWebpackPlugin({
-      filename: 'lab-results.html',
+      filename: 'lab-results',
       template: 'src/html/lab-results.html'
     }),
     new HtmlWebpackPlugin({
-      filename: 'pick-a-team.html',
+      filename: 'pick-a-team',
       template: 'src/html/pick-a-team.html'
     }),
     new HtmlWebpackPlugin({
-      filename: 'shop.html',
+      filename: 'shop',
       template: 'src/html/shop.html'
     })
   ]
