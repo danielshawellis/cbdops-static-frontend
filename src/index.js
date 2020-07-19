@@ -1,2 +1,2 @@
-import 'bootstrap';
+// IMPORT STYLES
 import './scss/index.scss';
