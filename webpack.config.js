@@ -1,4 +1,5 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
@@ -10,15 +11,20 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.html$/,
+        test: /\.(jpg|png|svg)$/,
         use: [
           {
             loader: 'file-loader',
             options: {
               name: '[name].[ext]',
+              outputPath: 'assets/images/',
             }
           }
         ]
+      },
+      {
+        test: /\.html$/,
+        use: ['html-loader']
       },
       {
         test: /\.(woff|woff2)$/,
@@ -69,5 +75,31 @@ module.exports = {
       warnings: true,
       errors: true
     }
-  }
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      filename: 'index.html',
+      template: 'src/html/index.html'
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'about-us.html',
+      template: 'src/html/about-us.html'
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'faq.html',
+      template: 'src/html/faq.html'
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'lab-results.html',
+      template: 'src/html/lab-results.html'
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'pick-a-team.html',
+      template: 'src/html/pick-a-team.html'
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'shop.html',
+      template: 'src/html/shop.html'
+    })
+  ]
 };
