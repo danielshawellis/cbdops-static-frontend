@@ -12,4 +12,12 @@
             }
         }
     }
+
+    .nav-link svg {
+        fill: $white;
+
+        &:hover {
+            fill: $primary;
+        }
+    }
 }
