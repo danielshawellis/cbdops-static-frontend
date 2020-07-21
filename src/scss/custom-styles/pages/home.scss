@@ -1,0 +1,15 @@
+@import '../../bootstrap-theme.scss';
+
+.navbar {
+    .navbar-nav {
+        .nav-link {
+            font-family: $headings-font-family;
+            color: $white;
+            opacity: 1;
+
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+}
