@@ -1,9 +1,6 @@
 // IMPORT STYLES
 import './scss/index.scss';
 
-// IMPORT PAGES STYLES
-import './scss/custom-styles/pages/home.scss';
-
 // IMPORT FULL BOOTSTRAP SCRIPTS FOR TESTING
 // import 'bootstrap';
 

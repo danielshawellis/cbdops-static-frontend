@@ -1,0 +1,7 @@
+@import '../bootstrap-theme.scss';
+
+footer {
+    @media screen and (max-width: map-get($grid-breakpoints, "md")) {
+        text-align: center;
+    }
+}
