@@ -49,3 +49,6 @@
 @import "./custom-styles/typography.scss";
 @import "./custom-styles/header.scss";
 @import "./custom-styles/footer.scss";
+
+// IMPORT PAGE-SPECIFIC STYLES
+@import "./custom-styles/pages/index.scss";

@@ -1,0 +1,36 @@
+@import '../../bootstrap-theme.scss';
+
+.custom-page-index {
+    background-color: $black;
+
+    .custom-home-header-main-img {
+        max-width: 65%;
+
+        @media screen and (max-width: map-get($grid-breakpoints, "md")) {
+            max-width: 100%;
+        }
+    }
+
+    .custom-home-header-button {
+        &:first-child {
+            margin-right: 60px;
+        }
+        &:last-child {
+            margin-left: 60px;
+        }
+
+        @media screen and (max-width: map-get($grid-breakpoints, "md")) {            
+            padding: 0.375rem 0.75rem;
+            font-size: 1rem;;
+            
+            &:first-child, &:last-child {
+                margin: 0;
+            }
+        }
+
+        @media screen and (max-width: 370px) {            
+            padding: 0.375rem 0.5rem;
+            font-size: 0.8rem;;
+        }
+    }
+}
