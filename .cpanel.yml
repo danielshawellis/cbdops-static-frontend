@@ -1,0 +1,5 @@
+---
+    deployment:
+      tasks:
+        - export DEPLOYPATH=/home/ammodxjd/cbdops.ammonitedevelopment.com
+        - /bin/cp -R dist $DEPLOYPATH

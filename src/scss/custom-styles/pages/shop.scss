@@ -1,0 +1,34 @@
+@import "../../bootstrap-theme.scss";
+
+.custom-shop-tabs-desktop {
+
+    border: none;
+    border-radius: 0;
+
+    .card-header {
+        border: 0;
+        background-color: transparent;
+    }
+
+    .card-header .nav-item {
+        flex-grow: 1;
+        border-top: 2px solid;
+        border-color: transparent;
+        cursor: pointer;
+        background-color: rgba(0,0,0,0.03);
+
+        &:hover {
+            background-color: rgba(0,0,0,0.06);
+            border-color: $primary;
+        }
+
+        &[aria-expanded="true"] {
+            background-color: transparent;
+            border-color: $primary;
+        }
+    }
+
+    .table td {
+        width: 50%;
+    }
+}
